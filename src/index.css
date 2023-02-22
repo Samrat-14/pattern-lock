@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+}
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 40px 0;
+    box-shadow: 2px 2px 2px #909090, inset 2px 2px 2px #5d5c5c;
+    background: #2f2f2f;
+    border-radius: 1rem;
+}
+.placeholder1 {
+    font-size: 20px;
+    letter-spacing: 0.05rem;
+}
+.placeholder2 {
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 0 3rem;
+    background: transparent;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+}
+.disabled {
+    color: #676767;
+    cursor: auto;
+}
+.options {
+    position: absolute;
+    top: 73%;
+    left: 45%;
+    background: #282828;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.hover {
+    font-size: 12px;
+    height: 2rem;
+    width: 8rem;
+    margin: 0;
+}
+.hover:hover {
+    background: #464646;
+}
+.message {
+    display: none;
+    font-size: 14px;
+    position: absolute;
+    top: 12%;
+    background: #2f2f2f;
+    height: 3rem;
+    width: 19rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+}
+.lock {
+    margin: 1rem;
+}
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    20%,
+    80% {
+        margin-left: -12px;
+    }
+    40%,
+    60% {
+        margin-left: 12px;
+    }
+}
+.react-pattern-lock__pattern-wrapper.error
+    .react-pattern-lock__point-wrapper.selected
+    .react-pattern-lock__point
+    .react-pattern-lock__point-inner {
+    background: #e62121 !important;
+}
+.react-pattern-lock__pattern-wrapper.success
+    .react-pattern-lock__point-wrapper.selected
+    .react-pattern-lock__point
+    .react-pattern-lock__point-inner {
+    background: #17a70a !important;
+}
+.react-pattern-lock__pattern-wrapper
+    .react-pattern-lock__point-wrapper
+    .react-pattern-lock__point
+    .react-pattern-lock__point-inner {
+    background: #dbdbdb !important;
+}
+
+.react-pattern-lock__pattern-wrapper.error
+    .react-pattern-lock__connector-wrapper
+    .react-pattern-lock__connector {
+    background: #e62121 !important;
+}
+.react-pattern-lock__pattern-wrapper.success
+    .react-pattern-lock__connector-wrapper
+    .react-pattern-lock__connector {
+    background: #17a70a !important;
+}
+.react-pattern-lock__pattern-wrapper
+    .react-pattern-lock__connector-wrapper
+    .react-pattern-lock__connector {
+    background: #dbdbdb !important;
+}
